@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser_parameter" value="Firefox"/>
+  <test name="Test1(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser_parameter" value="Chrome"/>
+    <classes>
+      <class name="com.abc.testingscripts.CrossBrowserTesting">
+        <methods>
+          <include name="browserTest"/>
+          <include name="browserTest"/>
+          <include name="magento"/>
+        </methods>
+      </class> <!-- com.abc.testingscripts.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser_parameter" value="Firefox"/>
+    <classes>
+      <class name="com.abc.testingscripts.CrossBrowserTesting">
+        <methods>
+          <include name="browserTest"/>
+          <include name="browserTest"/>
+          <include name="magento"/>
+        </methods>
+      </class> <!-- com.abc.testingscripts.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

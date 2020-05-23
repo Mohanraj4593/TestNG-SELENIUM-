@@ -13,7 +13,7 @@ public class AssertDemo {
 		public void assert_demo() 
 		{
 			WebDriver driver=new ChromeDriver();
-			WebDriver driver1=new FirefoxDriver();
+			//WebDriver driver1=new FirefoxDriver();
 			driver.get("https://www.gmail.com");
 			String eTitle=driver.getTitle();
 			String aTitle="Gmail";
